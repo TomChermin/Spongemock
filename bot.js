@@ -13,13 +13,8 @@ bot.command('start', ctx => {
 });
 
 
-
-
-
 bot.command('loser', ctx => {
-
     var resp = "Jij ja.";
-
     bot.telegram.sendMessage(ctx.chat.id, resp, {});
 });
 
