@@ -4,15 +4,6 @@ const token = '2065000283:AAGRq1ObTlb2NM-ObUVBL2438zjKXhklf2c';
 
 const bot = new Telegraf(token);
 
-bot.command('start', ctx => {
-    console.log(ctx);
-    console.log('-----');
-    console.log(ctx.message.reply_to_message);
-    bot.telegram.sendMessage(ctx.chat.id, 'Hello!', {
-    });
-});
-
-
 bot.command('loser', ctx => {
     var resp = "Jij ja.";
     bot.telegram.sendMessage(ctx.chat.id, resp, {});
